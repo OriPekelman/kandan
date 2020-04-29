@@ -15,7 +15,7 @@ gem 'cancan'
 
 # Server/transport gems
 gem 'thin'
-gem 'faye'
+gem 'faye', '>= 1.0.4'
 
 # Helper gems
 gem 'kaminari'
