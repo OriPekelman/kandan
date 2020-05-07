@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Core gems
-gem 'rails', '3.2.13'
+gem 'rails', '4.0.0'
 
 # Database adapters
 gem 'pg'
