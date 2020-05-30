@@ -18,7 +18,7 @@ gem 'thin'
 gem 'faye'
 
 # Helper gems
-gem 'kaminari'
+gem 'kaminari', '>= 1.2.1'
 gem 'aws-sdk'
 gem 'paperclip'
 gem 'remotipart'
