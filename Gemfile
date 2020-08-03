@@ -15,7 +15,7 @@ gem 'cancan'
 
 # Server/transport gems
 gem 'thin'
-gem 'faye'
+gem 'faye', '>= 0.8.9'
 
 # Helper gems
 gem 'kaminari'
@@ -60,7 +60,7 @@ group :test do
   gem 'simplecov', :require => false
   gem 'coveralls', :require => false
 
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.1.0'
   gem 'launchy'
   gem 'capybara'
 end
