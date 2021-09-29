@@ -19,7 +19,7 @@ gem 'faye'
 
 # Helper gems
 gem 'kaminari'
-gem 'aws-sdk'
+gem 'aws-sdk', '>= 1.8.5'
 gem 'paperclip'
 gem 'remotipart'
 gem 'jquery-rails'
@@ -60,9 +60,9 @@ group :test do
   gem 'simplecov', :require => false
   gem 'coveralls', :require => false
 
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.1.0'
   gem 'launchy'
-  gem 'capybara'
+  gem 'capybara', '>= 2.0.3'
 end
 
 group :development, :test do
