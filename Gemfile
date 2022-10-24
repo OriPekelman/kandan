@@ -70,5 +70,5 @@ group :development, :test do
   gem 'guard'
   gem 'guard-rspec'
   gem 'database_cleaner'
-  gem 'jasmine', '~> 1.3.1'
+  gem 'jasmine', '~> 2.0.0'
 end
