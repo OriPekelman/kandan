@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Core gems
-gem 'rails', '3.2.13'
+gem 'rails', '4.0.0'
 
 # Database adapters
 gem 'pg'
@@ -10,7 +10,7 @@ gem 'pg'
 #gem 'mysql2'
 
 # Auth gems
-gem 'devise'
+gem 'devise', '>= 3.0.0'
 gem 'cancan'
 
 # Server/transport gems
@@ -28,8 +28,8 @@ gem 'enumerize'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
+  gem 'sass-rails', '>= 4.0.0'
+  gem 'coffee-rails', '>= 4.0.0'
   gem 'bourbon'
   gem 'execjs'
   gem 'eco'
