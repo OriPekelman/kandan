@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Core gems
-gem 'rails', '3.2.13'
+gem 'rails', '5.0.0'
 
 # Database adapters
 gem 'pg'
@@ -10,7 +10,7 @@ gem 'pg'
 #gem 'mysql2'
 
 # Auth gems
-gem 'devise'
+gem 'devise', '>= 4.0.0'
 gem 'cancan'
 
 # Server/transport gems
@@ -22,14 +22,14 @@ gem 'kaminari'
 gem 'aws-sdk'
 gem 'paperclip'
 gem 'remotipart'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 gem 'enumerize'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
+  gem 'sass-rails', '>= 5.0.5'
+  gem 'coffee-rails', '>= 4.1.1'
   gem 'bourbon'
   gem 'execjs'
   gem 'eco'
@@ -70,5 +70,5 @@ group :development, :test do
   gem 'guard'
   gem 'guard-rspec'
   gem 'database_cleaner'
-  gem 'jasmine', '~> 1.3.1'
+  gem 'jasmine', '~> 2.0.0'
 end
