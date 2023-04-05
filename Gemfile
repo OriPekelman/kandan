@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Core gems
-gem 'rails', '3.2.13'
+gem 'rails', '6.1.7.3'
 
 # Database adapters
 gem 'pg'
@@ -10,31 +10,31 @@ gem 'pg'
 #gem 'mysql2'
 
 # Auth gems
-gem 'devise'
+gem 'devise', '>= 4.7.1'
 gem 'cancan'
 
 # Server/transport gems
 gem 'thin'
-gem 'faye'
+gem 'faye', '>= 1.1.0'
 
 # Helper gems
-gem 'kaminari'
-gem 'aws-sdk'
-gem 'paperclip'
+gem 'kaminari', '>= 1.2.1'
+gem 'aws-sdk', '>= 1.52.0'
+gem 'paperclip', '>= 5.2.1'
 gem 'remotipart'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.4.0'
 gem 'enumerize'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
+  gem 'sass-rails', '>= 5.0.8'
+  gem 'coffee-rails', '>= 4.2.2'
   gem 'bourbon'
   gem 'execjs'
   gem 'eco'
-  gem 'uglifier'
-  gem 'bootstrap-sass', '~> 2.3.0.1'
+  gem 'uglifier', '>= 2.7.2'
+  gem 'bootstrap-sass', '~> 3.4.0.0'
   gem 'gemoji'
 end
 
@@ -47,7 +47,7 @@ group :development do
   gem 'pry-rails'
   gem 'quiet_assets'
   gem 'awesome_print'
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.8.0'
   gem 'binding_of_caller'
   gem 'debugger'
 end
@@ -70,5 +70,5 @@ group :development, :test do
   gem 'guard'
   gem 'guard-rspec'
   gem 'database_cleaner'
-  gem 'jasmine', '~> 1.3.1'
+  gem 'jasmine', '~> 2.0.0'
 end
