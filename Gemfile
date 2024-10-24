@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Core gems
-gem 'rails', '3.2.13'
+gem 'rails', '6.1.7.9'
 
 # Database adapters
 gem 'pg'
@@ -18,7 +18,7 @@ gem 'thin'
 gem 'faye'
 
 # Helper gems
-gem 'kaminari'
+gem 'kaminari', '>= 1.0.0'
 gem 'aws-sdk'
 gem 'paperclip'
 gem 'remotipart'
@@ -28,7 +28,7 @@ gem 'enumerize'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails'
+  gem 'sass-rails', '>= 6.0.0'
   gem 'coffee-rails'
   gem 'bourbon'
   gem 'execjs'
