@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Core gems
-gem 'rails', '3.2.13'
+gem 'rails', '4.0.0'
 
 # Database adapters
 gem 'pg'
@@ -10,7 +10,7 @@ gem 'pg'
 #gem 'mysql2'
 
 # Auth gems
-gem 'devise'
+gem 'devise', '>= 4.0.0'
 gem 'cancan'
 
 # Server/transport gems
@@ -18,18 +18,18 @@ gem 'thin'
 gem 'faye'
 
 # Helper gems
-gem 'kaminari'
+gem 'kaminari', '>= 1.0.0'
 gem 'aws-sdk'
 gem 'paperclip'
 gem 'remotipart'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.0'
 gem 'enumerize'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
+  gem 'sass-rails', '>= 6.0.0'
+  gem 'coffee-rails', '>= 4.0.0'
   gem 'bourbon'
   gem 'execjs'
   gem 'eco'
@@ -54,7 +54,7 @@ end
 
 group :test do
   gem 'faker'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 4.0.0'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
   gem 'simplecov', :require => false
