@@ -19,7 +19,7 @@ gem 'faye'
 
 # Helper gems
 gem 'kaminari'
-gem 'aws-sdk'
+gem 'aws-sdk', '>= 1.52.0'
 gem 'paperclip'
 gem 'remotipart'
 gem 'jquery-rails'
