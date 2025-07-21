@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Core gems
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.14'
 
 # Database adapters
 gem 'pg'
@@ -10,7 +10,7 @@ gem 'pg'
 #gem 'mysql2'
 
 # Auth gems
-gem 'devise'
+gem 'devise', '>= 2.2.4'
 gem 'cancan'
 
 # Server/transport gems
@@ -22,15 +22,15 @@ gem 'kaminari'
 gem 'aws-sdk'
 gem 'paperclip'
 gem 'remotipart'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 2.2.2'
 gem 'enumerize'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
-  gem 'bourbon'
+  gem 'sass-rails', '>= 4.0.0'
+  gem 'coffee-rails', '>= 4.0.0'
+  gem 'bourbon', '>= 3.1.2.1'
   gem 'execjs'
   gem 'eco'
   gem 'uglifier'
@@ -45,7 +45,7 @@ end
 group :development do
   gem 'kandan-count-dev'
   gem 'pry-rails'
-  gem 'quiet_assets'
+  gem 'quiet_assets', '>= 1.0.3'
   gem 'awesome_print'
   gem 'better_errors'
   gem 'binding_of_caller'
@@ -54,11 +54,11 @@ end
 
 group :test do
   gem 'faker'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 2.13.1'
   gem 'shoulda-matchers'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.3.0'
   gem 'simplecov', :require => false
-  gem 'coveralls', :require => false
+  gem 'coveralls', '>= 0.6.5', :require => false
 
   gem 'poltergeist'
   gem 'launchy'
@@ -67,8 +67,8 @@ end
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'guard'
-  gem 'guard-rspec'
+  gem 'guard', '>= 1.8.0'
+  gem 'guard-rspec', '>= 2.5.3'
   gem 'database_cleaner'
   gem 'jasmine', '~> 1.3.1'
 end
