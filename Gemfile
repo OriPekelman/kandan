@@ -60,9 +60,9 @@ group :test do
   gem 'simplecov', :require => false
   gem 'coveralls', :require => false
 
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.1.1'
   gem 'launchy'
-  gem 'capybara'
+  gem 'capybara', '>= 2.1.0'
 end
 
 group :development, :test do
